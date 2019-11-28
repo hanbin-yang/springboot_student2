@@ -18,7 +18,7 @@ public class StudentController {
 
     @RequestMapping("list")
     public String getList(Model model){
-        List<Student> list = studentService.list();
+        List<Student> list = studentService.getStuList();
 
         model.addAttribute("list",list);
 
